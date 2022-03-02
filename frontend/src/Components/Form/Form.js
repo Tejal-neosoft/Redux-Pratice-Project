@@ -1,8 +1,8 @@
 import React,{ useState} from 'react'
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
-import FileBase from 'react-file-base64';
+import FileBase from 'react-file-base64' 
 
-
+ 
 function Form() {
    
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });

@@ -9,6 +9,7 @@ export const getMemory = ( async (req,res)=>{
         console.log(error)
     }
 })
+
 export const createPost = (async (req, res) => {
     const { title, message, selectedFile, creator, tags } = req.body;    
     const newPostMessage = new dataModel({ title, message, selectedFile, creator, tags })

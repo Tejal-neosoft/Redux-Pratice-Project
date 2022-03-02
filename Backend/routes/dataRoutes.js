@@ -6,4 +6,5 @@ router.route('/').get(getMemory)
 router.route('/').post(createPost) 
 
 
+
 export default router 
