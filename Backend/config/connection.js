@@ -1,16 +1,14 @@
 import mongoose from 'mongoose';
 
-const db = "mongodb://localhost:27017/ReduxPractice";
 
-export const connection = async () =>{
+export const connection = async () => {
     try {
-        await mongoose.connect(db, {
-            useNewUrlParser:true})
-            console.log("mongo connected")
-        }
-        
-    
+        await mongoose.connect(process.env.DB, {
+            useNewUrlParser: true
+        })
+        console.log("mongo connected")
+    }
     catch (error) {
-        
+        console.log(error.message)
     }
 }
