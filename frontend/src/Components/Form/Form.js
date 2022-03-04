@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import FileBase from 'react-file-base64';
 import useStyles from './style.js';
 import { createPosts, updatePosts } from '../../actions/dataAction';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 function Forms({ currentId, setCurrentId }) {
   const dispatch = useDispatch()
-  const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+  const [postData, setPostData] =  useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 
   const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null)
 
@@ -37,7 +37,7 @@ function Forms({ currentId, setCurrentId }) {
     <>
       <Paper className={classes.paper}>
         <form autoComplete="off" noValidate className={classes.form} onSubmit={handleSubmit}>
-          <Typography variant="h6"> {currentId ? 'Editing' : 'Creating'} a Memory</Typography>
+          <Typography variant="h6"> {currentId ? 'Editing' : 'Creating'}  Memory</Typography>
 
           <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
 

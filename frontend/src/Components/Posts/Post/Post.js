@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core/';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -6,7 +6,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import useStyles from './styles';
 import moment from 'moment';
 import { deletePosts, likePosts } from '../../../actions/dataAction';
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 function Post({ post, setCurrentId }) {
   const dispatch = useDispatch()
 

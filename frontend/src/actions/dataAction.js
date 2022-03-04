@@ -1,7 +1,7 @@
 import * as api from '../api'
 import { FETCH_POST, CREATE_POST, LIKE_POSTS, DELETE_POSTS, UPDATE_POSTS } from '../constants/constant'
 
-// Action Creators == returns action always
+
 export const getPosts = () => async (dispatch) => {
     console.log(api.fetchPosts())
     try {

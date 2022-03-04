@@ -4,8 +4,8 @@ import AppBar from '@mui/material/AppBar';
 import Posts from './Components/Posts/Posts';
 import Form from './Components/Form/Form';
 import useStyles from './styles';
-import { useDispatch } from 'react-redux'
-import { getPosts } from './actions/dataAction'
+import { useDispatch } from 'react-redux';
+import { getPosts } from './actions/dataAction';
 const App = () => {
   const classes = useStyles();
   const dispatch = useDispatch();

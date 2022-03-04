@@ -1,5 +1,5 @@
-import express from 'express'
-import { createPost, getMemory, updatePost, deletePost, likePost } from '../controller/dataController.js'
+import express from 'express';
+import { createPost, getMemory, updatePost, deletePost, likePost } from '../controller/dataController.js';
 const router = express.Router()
 
 router.route('/').get(getMemory)

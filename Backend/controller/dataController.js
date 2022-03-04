@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import PostModel from '../models/dataSchema.js'
+import PostModel from '../models/dataSchema.js';
 export const getMemory = (async (req, res) => {
     try {
         const postMessages = await PostModel.find();
